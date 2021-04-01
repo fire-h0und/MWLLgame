@@ -23,7 +23,7 @@ export WINEDEBUG=-all
 export WINEESYNC=1
 
 # we controll which directory we want be runned by the script 
-  export WINEPREFIX=~/.wine.mwll
+  export WINEPREFIX=~/.wine
 
 #this can really beak things if enabled but try it?
 #  export MESA_DEBUG=1
