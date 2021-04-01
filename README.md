@@ -25,8 +25,11 @@ Prerequisites:
 
 About:
 ===============
-This is an unendorsed side project by a MW:LL community member
+This is an unendorsed side project by a MW:LL community member.
+
 Feedback on offical forum or discord server (links are on the launcher)
+
+
 
 see you on the 31st century battlefiled soldier!
 o7
