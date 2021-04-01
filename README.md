@@ -1,5 +1,5 @@
 MWLLgame.sh
-the wraper for playing on GNU/Linux & wine
+The wraper for playing on GNU/Linux & wine
 
 Usage:
 in terminal type:
