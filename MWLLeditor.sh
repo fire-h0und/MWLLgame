@@ -3,11 +3,11 @@
 v="0.11-beta"
 #executable=Crysis.exe
 executable=Editor.exe
-executable=EditorLauncher.exe
+#executable=EditorLauncher.exe
 
 export WINEARCH=win64
 #export WINEDEBUG=-fixme-all,-warn-all,-err-all,-all,-info-all
-export WINEDEBUG=-all
+#export WINEDEBUG=-all
 export WINEPREFIX="${HOME}/.wine"
 
 winegamepath='/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis Wars/Bin64'
@@ -38,5 +38,5 @@ cd "${WINEPREFIX}${winegamepath}/${binpath}"
 pwd
 ls
 
-wine64 "${windowsgamepath}${executable}" $OPT #2>/dev/null # &> MWLL_debug.log
+wine64 "${windowsgamepath}${executable}" $OPT /? #2>/dev/null # &> MWLL_debug.log
 

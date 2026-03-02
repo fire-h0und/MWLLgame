@@ -18,3 +18,4 @@ cd "${HOME}/.wine/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis Wars
 pwd
 
 WINEPREFIX="${HOME}/.wine" wine64 "C:\Program Files (x86)\Electronic Arts\Crytek\Crysis Wars\Mods\MWLL\MWLLLauncher.exe"
+
