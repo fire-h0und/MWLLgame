@@ -11,12 +11,15 @@ shaderspath=~/Documents/My\ Games/Crysis\ Wars/Shaders
 #here we do "magic" to run DX9
 #and tell Crysis we want the MWLL mod not the OEM game :^)
 OPT="-dx9 -mod MWLL"
+#non DX9 setups (aka DX10) should uncomment this:
 #OPT="-mod MWLL"
 
 # reducing what wine spews at us
 export WINEDEBUG=-all
 export WINEESYNC=1 #old tweak
 export WINEFSYNC=1 #new tweak
+#set this according to your setup:
+export WINEPREFIX="${HOME}/.wine" 
 
 # Vulkacn support:
 DXVK_CONFIG_FILE=$HOME/.config/dxvk.conf
@@ -45,7 +48,7 @@ rm -r "${shaderspath}/*"
 cd "${WINEPREFIX}${winegamepath}/${binpath}"
 pwd
 
-WINEPREFIX="${HOME}/.wine" wine64 "${windowsgamepath}${executable}" $OPT #2>/dev/null # &> MWLL_debug.log
+wine64 "${windowsgamepath}${executable}" $OPT #2>/dev/null # &> MWLL_debug.log
 
 # this should work for most single monitor setups, adjust accordingly
 xrandr --output $(xrandr | grep " connected" | awk '{print $1}') -s 0
